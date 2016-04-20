@@ -1,0 +1,17 @@
+﻿<Window x:Class="FileCrypter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CryptMyFile" Height="244" Width="529.5" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <RadioButton x:Name="IsEncDecByFile_RadioButton" Content="шифруем\дешифруем файлом" HorizontalAlignment="Left" Margin="16,90,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="IsEncDecByPassword_RadioButton" Content="шифруем\дешифруем паролем" HorizontalAlignment="Left" Margin="16,130,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <Button x:Name="BrowseEncDecFile_Button" Content="..." HorizontalAlignment="Left" Margin="213,90,0,0" VerticalAlignment="Top" Width="70" Click="BrowseEncDecFile_Button_Click"/>
+        <TextBox x:Name="Password_TextBox" HorizontalAlignment="Left" Height="23" Margin="213,127,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="294" HorizontalContentAlignment="Center"/>
+        <Button x:Name="BrowseFileToEncDec_Button" Content="..." HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Width="69" Click="BrowseFileToEncDec_Button_Click"/>
+        <Label x:Name="EncDecFileName_Label" Content="файл не выбран" HorizontalAlignment="Left" Margin="295,88,0,0" VerticalAlignment="Top"/>
+        <Label Content="Файл для шифрования\дешифрования:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="FileToEncDecName_Label" Content="файл не выбран" HorizontalAlignment="Left" Margin="310,8,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Go_Button" Content="Зашифровать\расшифровать" HorizontalAlignment="Left" Margin="56,166,0,0" VerticalAlignment="Top" Width="412" Click="Go_Button_Click"/>
+
+    </Grid>
+</Window>
